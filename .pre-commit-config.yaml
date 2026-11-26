@@ -14,7 +14,7 @@ repos:
         args: []
         files: ^(.*\.md|.*\.yaml|.*\.yml)$
         # https://github.com/prettier/prettier/releases
-        additional_dependencies: ["prettier@3.9.10"]
+        additional_dependencies: ["prettier@3.10.1"]
         stages: ["pre-commit"]
   # Security
   - repo: https://github.com/Yelp/detect-secrets
@@ -35,7 +35,7 @@ repos:
         stages: ["pre-push"]
   # Markdown
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.49.1
+    rev: v0.50.0
     hooks:
       - id: markdownlint-fix
         stages: ["pre-commit"]
